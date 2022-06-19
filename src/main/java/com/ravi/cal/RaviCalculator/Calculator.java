@@ -4,7 +4,6 @@ public class Calculator {
 
 	private long first;
 	private long second;
-System.out.println("Start");	
 	public Calculator(long first, long second){
 		this.first = first;
 		this.second=second;
@@ -38,7 +37,7 @@ System.out.println("Start");
 
 		long first = Long.parseLong(args[0]);
 		long second = Long.parseLong(args[1]);
-System.out.println("Start");		
+            System.out.println("Start");		
 		Calculator cal = new Calculator(first, second);
 		String output = String.format("\n*** Your Results ***\n\nFirst: %d\nSecond: %d\n\nSum : %d\nDifference : %d\nProduct : %d\n\n", cal.first, cal.second, cal.addFucn(first, second), cal.subFucn(first, second), cal.mulFucn(first, second));
 	    System.out.println(output);
